@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../style/friend.css    ">
+    <title>My Best Friends</title>
+</head>
+<body>
+    <div id="friends-section">
+        <div id="inner-width">
+            <h1>My best Friends</h1>
+            <div id="friends-pics">
+                <img src="../images/friends/jerry.jpg" alt="friend-1" class="active">
+                <img src="../images/friends/alhan.jpg" alt="friend-2">
+                <img src="../images/friends/ruban.jpg" alt="friend-3">
+                <img src="../images/friends/peter.jpg" alt="friend-4">
+                <img src="../images/friends/roshan.jpg" alt="friend-5">
+            </div>
+            <div id="about-friend">
+                <div class="about active" id="friend-1">
+                    <p>My best friend who understands me from first year. I'm not sure about this but we have some kind of wavelength which is always in sync and it still exists!! If there is one thing that i would like to have till the end of my life will be her friendship. The Things that we share are beyond any kind of friendship can have in this world. Whenever I miss her I will call her but end up in teasing her. Even a minute talk with her will be full of happiness in my life. Biology teacher!!</p>
+                    <span class="name">Jerry/Bittuuu</span>
+                </div>
+                <div class="about" id="friend-2">
+                    <p>My best friend who tought me everything from my first year. Enjoyed every trip with him. Its because of him I understood that life on earth is precious and that I should never miss even one sec of my life for someone else. Explained me the meaning of the word fun. The way he cares about his looks I hope he becomes a model one day.</p>
+                    <span class="name">Alhan/Ahmed</span>
+                </div>
+                <div class="about" id="friend-3">
+                    <p>My final year project buddy. Apart from that the one who cares about me. The one who inspired me that I should work hard and live my own dreams. Crazy fan of united. The one who always supported me in whatever things I do. The one who used to correct my vocabulary. Don't stop your tinder search.</p>
+                    <span class="name">Ruban/BossBaby</span>
+                </div>
+                <div class="about" id="friend-4">
+                    <p>My only friend who inserted the faith of god in my heart. You always wanted the best to happen for me. You are the one who helped me out of all my miseries. I always dreamed for a crazy relationship like which he had. I am damn sure God will bless him through out his life and he will inspire more people into good path.</p>
+                    <span class="name">Peter/InsectMan</span>
+                </div>
+                <div class="about" id="friend-5">
+                    <p>Rosh my pubg friend. I still remember those crazy nights of pubg with you. I always liked you and your family. Most of my hostel life was with you in games. You always helped me with my studies. All those combine studies are the reason for me getting a degree. Thank you for bringing some crazy memories in my life.</p>
+                    <span class="name">Roshan/SmokeMan</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('#friends-pics img').click(function(){
+            $('#friends-pics img').removeClass('active');
+            $(this).addClass('active');
+
+            $('.about').removeClass('active');
+            $('#'+$(this).attr("alt")).addClass('active');
+        });
+    </script>
+</body>
+</html>
